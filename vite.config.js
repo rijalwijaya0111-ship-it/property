@@ -3,5 +3,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/property-website/',
+  base: '/property/npm run build',
 });
