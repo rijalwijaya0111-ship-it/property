@@ -215,6 +215,7 @@ body {
   object-fit: cover;
   display: block;
   transition: transform 0.6s ease;
+  border-radius: 15%;
 }
 
 .about-image:hover img {

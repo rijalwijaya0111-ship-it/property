@@ -181,7 +181,7 @@ function Home() {
           </div>
 
           <div className="about-image">
-            <img src="/images/about.webp" alt="About Property" />
+            <img src={`${import.meta.env.BASE_URL}images/Nexoralogo.webp`} alt="About Property" />
           </div>
         </div>
       </section>
@@ -382,7 +382,7 @@ function Home() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/property">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/properties" element={<Properties />} />
