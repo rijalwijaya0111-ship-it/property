@@ -1,0 +1,95 @@
+.property-description {
+  max-width: 780px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.description-label {
+  margin: 0 0 18px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.description-text {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.9;
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: #555;
+  max-width: 720px;
+}
+
+@media (max-width: 600px) {
+  .property-description {
+    margin-bottom: 32px;
+  }
+
+  .description-text {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
+
+/* =========================
+   ALL PROPERTIES PAGE
+========================= */
+
+.properties-page {
+  min-height: 100vh;
+  background: #f8f7f4;
+  padding: 130px 7% 80px;
+}
+
+.properties-header {
+  margin-bottom: 55px;
+}
+
+.properties-header .back-button {
+  margin: 0 0 45px;
+}
+
+.properties-header h1 {
+  font-size: 58px;
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -1.8px;
+  color: #1c1c1c;
+  margin: 12px 0 15px;
+}
+
+.properties-header > div:last-child > p:last-child {
+  color: #777;
+  font-size: 15px;
+}
+
+.properties-page .property-grid {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .properties-page {
+    padding: 100px 5% 60px;
+  }
+
+  .properties-header {
+    margin-bottom: 40px;
+  }
+
+  .properties-header .back-button {
+    margin-bottom: 35px;
+  }
+
+  .properties-header h1 {
+    font-size: 40px;
+    letter-spacing: -1.2px;
+  }
+
+  .properties-header > div:last-child > p:last-child {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
