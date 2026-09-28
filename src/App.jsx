@@ -129,6 +129,14 @@ function Home() {
           </a>
         </div>
 
+        <div className="navbar-search">
+          <span className="navbar-search-icon">⌕</span>
+
+          <input type="text" placeholder="Search property..." />
+
+          <button type="button">Search</button>
+        </div>
+
         <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
           <span></span>
           <span></span>
@@ -148,16 +156,6 @@ function Home() {
           </h1>
 
           <p className="hero-description">Discover exceptional properties in Bali, from modern villas to beautiful homes in prime locations.</p>
-
-          <div className="search-box">
-            <div className="search-input-wrapper">
-              <span className="search-icon">⌕</span>
-
-              <input type="text" placeholder="Search location, city, or property..." />
-            </div>
-
-            <button type="button">Search</button>
-          </div>
         </div>
       </section>
 

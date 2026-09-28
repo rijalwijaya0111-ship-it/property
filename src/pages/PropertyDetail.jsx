@@ -1,10 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
-
+import { useEffect } from 'react';
 import properties from '../data/properties';
 
 function PropertyDetail() {
   const location = useLocation();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const id = Number(location.pathname.split('/').pop());
   const property = properties.find((item) => item.id === id);
 

@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import properties from '../data/properties';
 import PropertyCard from '../components/PropertyCard';
 
 function Properties() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="properties-page">
       <div className="properties-header">
-        <Link to="/" className="properties-back">
+        <Link to="/#featured-properties" className="properties-back">
           ← Back to Home
         </Link>
 
